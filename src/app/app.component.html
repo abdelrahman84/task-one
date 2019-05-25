@@ -1,0 +1,45 @@
+<section class="login-wrap mtb-40">
+    <div class="container" id="main">
+        <div class="row justify-content-center" *ngIf="!error">
+          <div class="col-md-6">
+              <div class="login-box">
+                  <h2 id="title">B2NESS</h2>
+                  <div class="alert alert-danger" *ngIf="loginError">
+                     {{loginError}}
+                  </div>
+                  <br>
+                  <form [formGroup]="loginForm" (ngSubmit)="onSubmit()" class="mainForm">
+                      <div class="input-group d-flex flex-column inputForm">
+                          <input type="text" formControlName="mobile"  placeholder="mobile" required class="inputTab1"> 
+                          
+                          <input type="password" formControlName="password"  placeholder="Password" required class="inputTab2">
+                          
+                      </div>
+                      <span class="forgot">Forgot passsword?</span>
+                      <div class="form-group">
+                          <button type="submit"  class="btn btn-primary login">Login</button>
+                      </div>
+                  </form>
+              </div>         
+          </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <span class="dontHave">You don't have an account? Creat one by</span>
+        <br>
+       
+
+        <div class="icons">
+    <a href="#" class="fa fa-facebook"></a>        
+    <a href="#" class="fa fa-twitter"></a>
+   <a href="#" class="fa fa-google"></a>
+    <a href="#" class="fa fa-instagram"></a>
+  </div>
+<div class="footer">By continue you agree to our <span class="privacy">Privacy and Terms</span></div>
+        <div class="service-error" *ngIf="error">
+          <h1>{{error.errorTitle}}</h1>
+          <h3>{{error.errorDesc}}</h3>
+       </div>
+    </div>
+  </section>

@@ -1,0 +1,90 @@
+#main{
+    background-image: url("../assets/background.jpg");
+}
+
+#title{
+    font-weight: bold;
+    color:white;
+    align-content: center;
+    padding-left:90px;
+    padding-top:100px;
+}
+
+.mainForm{
+  
+    width:80vw;
+    padding-left:50px;
+}
+
+
+
+.inputTab1{
+    border-radius: 10px 10px 0px 0px;
+    padding:7px;
+    color:lightblue;
+}
+
+.inputTab2{
+    border-radius: 0px 0px 10px 10px;
+    padding:7px;
+    color:lightblue;
+}
+.forgot{
+    color:white;
+    float:right;
+    font-size: 10px;
+    text-decoration: underline; 
+}
+
+.login{
+    border-radius: 10px 10px 10px 10px;
+    width:60vw;
+    margin-right: 100px;
+    font-size:12px;
+    height:40px;
+    
+}
+
+.dontHave{
+    color:white;
+    font-size: 10px;
+    float:center;
+    padding-left: 60px;
+}
+.footer{
+    color:white;
+    font-size: 10px;
+    padding-left:30px;
+   
+}
+
+.fa{
+  font-size: 10px;
+  width: 10px;
+  text-align: center;
+  background: white;
+  border-radius: 3px;
+  padding:10px;
+    margin: 1px;
+  }
+
+  .fa-twitter {
+   
+    color: lightblue;
+    
+  }
+  .fa-facebook{
+      color:blue;
+  }
+
+  .fa-instagram{
+      color:pink;
+  }
+
+  .icons{
+      padding-left:90px;
+  }
+
+  .privacy{
+    text-decoration: underline; 
+  }
